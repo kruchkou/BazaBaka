@@ -1,0 +1,56 @@
+[03-May-2020 19:54:22 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in /storage/ssd3/292/13539292/public_html/mysql.php:82
+Stack trace:
+#0 /storage/ssd3/292/13539292/public_html/mysql.php(61): getPlayerNameById(1)
+#1 /storage/ssd3/292/13539292/public_html/start.php(52): getLastMatches()
+#2 {main}
+  thrown in /storage/ssd3/292/13539292/public_html/mysql.php on line 82
+[03-May-2020 19:54:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getLastMatches() in /storage/ssd3/292/13539292/public_html/start.php:52
+Stack trace:
+#0 {main}
+  thrown in /storage/ssd3/292/13539292/public_html/start.php on line 52
+[03-May-2020 19:57:51 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:52 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:52 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:53 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:53 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:54 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:54 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:55 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:55 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:56 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:57:56 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 19:58:07 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:07 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:08 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:08 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:09 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:09 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:09 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:10 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:11 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:11 UTC] PHP Notice:  Array to string conversion in /storage/ssd3/292/13539292/public_html/mysql.php on line 61
+[03-May-2020 19:58:11 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 19:58:34 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:35 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:35 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:36 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:36 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:37 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:37 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:38 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:38 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:39 UTC] PHP Notice:  Undefined offset: 0 in /storage/ssd3/292/13539292/public_html/mysql.php on line 83
+[03-May-2020 19:58:39 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 19:59:18 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 19:59:24 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 20:00:16 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, integer given in /storage/ssd3/292/13539292/public_html/mysql.php on line 80
+[03-May-2020 20:00:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[]: <<Unknown error>> in /storage/ssd3/292/13539292/public_html/mysql.php:82
+Stack trace:
+#0 /storage/ssd3/292/13539292/public_html/mysql.php(61): getPlayerNameById(1)
+#1 /storage/ssd3/292/13539292/public_html/start.php(52): getLastMatches()
+#2 {main}
+  thrown in /storage/ssd3/292/13539292/public_html/mysql.php on line 82
+[03-May-2020 20:01:12 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 20:01:18 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 20:03:04 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
+[03-May-2020 20:03:42 UTC] PHP Notice:  Undefined variable: keyboard in /storage/ssd3/292/13539292/public_html/start.php on line 71
