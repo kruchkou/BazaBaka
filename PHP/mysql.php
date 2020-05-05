@@ -74,6 +74,70 @@ function getLastMatches()
 	return false;
 }
 
+function getLastMatches1()
+{
+	$pdo = connect();
+		if ($pdo)
+		{
+      $results = [];
+			$stmt = $pdo->prepare("SELECT p1.name as 'player1', p2.name as 'player2',r.score as 'result', m.date as 'date' from matches m join players p1
+on m.player1 = p1.idplayers
+join players p2
+on m.player2 = p2.idplayers
+join result r on
+m.result=r.idresult limit 10");
+			$stmt->execute();
+			$stat = [];
+      $counter = 0;
+			foreach ($stmt as $row)
+				{
+            $stat['player1'] = (string)$row[player1];
+            $stat['player2'] = (string)$row[player2];
+            $stat['result'] = (string)$row[result];
+            $stat['date'] = (string)$row[date];
+            $results[$counter] = $stat;
+            $counter++;
+				}
+				$stmt = null;
+				$pdo = null;
+			return $results;
+		}
+	return false;
+}
+
+
+function getTwoPlayersMatches($player1,$player2)
+{
+	$pdo = connect();
+		if ($pdo)
+		{
+      $results = [];
+			$stmt = $pdo->prepare("SELECT p1.name, p2.name,r.score, m.date from matches m join players p1
+on m.player1 = p1.idplayers
+join players p2
+on m.player2 = p2.idplayers
+join result r on
+m.result=r.idresult
+where (p1.name= ? and p2.name=?) or (p2.name= ? and p1.name=?) limit 10");
+			$stmt->execute([$player1],[$player2],[$player2],[$player1]);
+			$stat = [];
+      $counter = 0;
+			foreach ($stmt as $row)
+				{
+            $stat['player1'] = (string)$row[player1];
+            $stat['player2'] = (string)$row[player2];
+            $stat['result'] = (string)$row[result];
+            $stat['date'] = (string)$row[date];
+            $results[$counter] = $stat;
+            $counter++;
+				}
+				$stmt = null;
+				$pdo = null;
+			return $results;
+		}
+	return false;
+}
+
 function getPlayerNameById($playerid) {
 
   $pdo = connect();
