@@ -48,6 +48,7 @@ function updateColumns($data,$uid)
 
 function getLastMatches()
 {
+  $players = getPlayers();
 	$pdo = connect();
 		if ($pdo)
 		{
@@ -58,9 +59,9 @@ function getLastMatches()
       $counter = 0;
 			foreach ($stmt as $row)
 				{
-            $stat['player1'] = (string) getPlayerNameById($row['player1']);
+            $stat['player1'] = $players[$row['player1']];
 						//$stat['player1'] = $row['player1'];
-						$stat['player2'] = (string) getPlayerNameById($row['player2']);
+						$stat['player2'] = $players[$row['player2']];
 						$stat['result'] = $row['result'];
             $stat['date'] = $row['date'];
             $results[$counter] = $stat;
@@ -98,15 +99,12 @@ function getPlayers() {
     $counter = 0;
     $stmt = $pdo->prepare("SELECT * from players");
     $stmt->execute();
-
+    $cell = [];
     foreach ($stmt as $row) {
-      $cell = [];
-      $cell['idplayers'] = $row['idplayers'];
-      $cell['name'] = $row['name'];
-      $result[$counter] = $cell;
-      $counter++;
+      $id = $row['idplayers'];
+      $cell[$id] = $row['name'];
     }
-    return $result;
+    return $cell;
   }
   return;
 }

@@ -39,11 +39,10 @@ if (($json = valid()) == false) { echo "Hi, bax_100 =)"; exit(); }
 		case 'Матчи двух игроков':
 	  $players = getPlayers();
 	  $ANSWER = "";
-	  
-	  foreach ($players as $row) {
-	     $id = $row['idplayers'];
-	     $name =$row['name'];
-	     $ANSWER.=strval($id)." | ".strval($name)."\n";
+
+	  foreach ($players as $key=>$row) {
+	     $name = $row;
+	     $ANSWER.=strval($key)." | ".strval($name)."\n";
 	  }
 		//$ANSWER = "Захотееел, захотееел";
 		break;
